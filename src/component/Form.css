@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form_container {
+  border: 2px solid black;
+  background-color: rgb(189, 195, 195);
+  margin: 30px;
+  padding: 30px;
+  display: inline-block;
+  justify-content: center;
+  width: 35%;
+}
+@media screen and (max-width: 768px) {
+  .form_container {
+    width: 70%;
+  }
+  .userName,
+  .email,
+  .checkbox {
+    flex-direction: column;
+  }
+  .email label,
+  .userName label,
+  .radio_name span,
+  .checkbox label {
+    font-size: 16px;
+  }
+  .userName input,
+  .email input[type="email"],
+  .radio_type input[type="radio"],
+  .checkbox input[type="checkbox"] {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+.userName {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.userName label {
+  font-size: 18px;
+}
+
+.userName input {
+  flex: 1;
+  font-size: 18px;
+}
+.email {
+  width: 100%;
+  display: flex;
+  padding-bottom: 10px;
+  gap: 18px;
+}
+.email label {
+  font-size: 18px;
+}
+.email input[type="email"] {
+  width: 100%;
+  font-size: 18px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+.checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.checkbox label {
+  font-size: 18px;
+}
+.radio {
+  padding-bottom: 10px;
+}
+.radio_name {
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+}
+.radio_type {
+  display: flex;
+}
+.radio_type input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+.radio_circle {
+  display: flex;
+  gap: 10px;
+}
+
+.button_f {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.button_name {
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #c3c8c3;
+  border: 2px solid rgb(13, 13, 13);
+}
+.button_name:hover {
+  background-color: black;
+  color: #c3c8c3;
+}

@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.title_container {
+  background-color: rgb(201, 206, 206);
+  font-size: 20px;
+  line-height: 1.5;
+}
+.body_container {
+  background-color: rgb(201, 206, 206);
+  font-size: 20px;
+}
